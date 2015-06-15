@@ -1,0 +1,46 @@
+<% include _global %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>GREE Creators Portfolio</title>
+<% include components/_head %>
+</head>
+<body>
+<div class="contents-wrapper">
+  <% include components/_navbar %>
+  <main class="main">
+    <div class="container">
+      <%- include('components/_carousel', {global_top: true}); %>
+      <div class="panels panels--works" id="panels">
+        <div class="panels__header">
+          <ul class="filter">
+            <li class="active">
+              <span class="icon icon__4 active"></span>Works
+            </li>
+            <li>
+              <a href="<%= this.SITE_ROOT%>creators/">
+                <span class="icon icon__4"></span>Creators
+              </a>
+            </li>
+            <li>
+              <a href="<%= this.SITE_ROOT%>categories/">
+                <span class="icon icon__4"></span>Categories
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="panels__body js-masonry" data-masonry-options='{"columnWidth":220,"itemSelector":".panel","gutter":20}' style="height: 400px;">
+          <% for(var i = 0; i < portfolios.length; i++) {%>
+            <% include components/_portfoliolist_index %>
+          <% } %>
+        </div>
+      </div>
+    </div>
+  </main>
+  <% include components/_footer %>
+</div>
+<% include components/_modal %>
+<% include components/_scripts %>
+</body>
+</html>

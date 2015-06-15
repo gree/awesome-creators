@@ -1,0 +1,89 @@
+<% include ../_global %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Daisuke Iwamoto | GREE Creators Portfolio</title>
+<% include ../components/_head %>
+</head>
+<body>
+<div class="contents-wrapper">
+<% include ../components/_navbar %>
+  <main class="main">
+    <div class="biography">
+     <div class="container">
+        <ul class="breadcrumb"><!--
+          --><li><a href="<%= this.SITE_ROOT %>">Top</a></li><!--
+          --><li><a href="./">Creators</a></li><!--
+          --><li>Daisuke Iwamoto</li><!--
+        --></ul>
+        <div class="biography__inner">
+          <h1 class="biography__name">岩本 大祐<span class="biography__name__alphabet">Daisuke Iwamoto</span></h1>
+          <div class="biography__post">リードアーティスト<br>Wright Flyer Studios 3部 / Artグループ / Concept Artチーム</div>
+          <p class="biography__description">漫画家として少年誌、青年誌で執筆。その後、ゲーム制作会社を経てグリー株式会社に入社。
+  「FINAL FANTASY ARTNICS DIVE」のアートディレクターを担当後、現在はNativeゲームの新規プロダクト開発に携わる。（2015年6月現在）</p>
+          <a href="#interview" class="button-link">interview<span class="icon icon__2"></span></a>
+          <img src="<%= this.SITE_ROOT %>img/creator/16318801.png" alt="岩本 大祐" class="biography__portrait">
+        </div>
+     </div>
+    </div>
+
+    <% include('../components/_portfoliolist_creator', {user_id: false}) %>
+    <div class="interview" id="interview">
+      <div class="interview__inner">
+        <h2 class="interview__title">Interview</h2>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>仕事をする上で気をつけていることは何ですか？</span></dt>
+          <dd class="interview__answer"><span>ユーザー、チーム、会社に求められているものになっているか、ずれがないかを、常に照らし合わせるようにしています。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>過去、印象に残っている仕事は何ですか？</span></dt>
+          <dd class="interview__answer"><span>FINAL FANTASY ARTNIKS DIVEのアートディレクションを担当した際、<br>IPタイトルが故に、調整にいろいろ工夫が必要だったことが印象深いです。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>グリーでのやりがいは何ですか？</span></dt>
+          <dd class="interview__answer"><span>優秀な方ばかりでとにかく勉強になります。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>休日の過ごし方は？</span></dt>
+          <dd class="interview__answer"><span>Unityで何か作ってます。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>頻繁に使用するツールはありますか？</span></dt>
+          <dd class="interview__answer"><span>Adobe Photoshop、ペイントツールSAI、Autodesk Maya、Unity、Unreal Engine、Autodesk Softimage、Adobe After Effects</span></dd>
+          <dd class="interview__answer__image">
+            <img src="<%= this.SITE_ROOT %>img/interviews/16318801/interview_01.png" alt="">
+          </dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>参考にしている参考書などはありますか？</span></dt>
+          <dd class="interview__answer"><span>本ではないですが、最新のゲーム情報やCGの技術が載るサイトは、1日に何回もチェックします。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>なぜ現在の職業に就きたいと思ったのですか？</span></dt>
+          <dd class="interview__answer"><span>とにかく多くの人に楽しんでもらえる物作りがやりたかったからです。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>業務外で自主制作をされていますか？</span></dt>
+          <dd class="interview__answer"><span>はい、してます。新しいツールなどは積極的に試用しています。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>製作過程について教えて下さい。</span></dt>
+          <dd class="interview__answer"><span>・ラフ→線画→カラーリング→仕上げ<br>・ラフ→モデリング→レンダリング→レタッチ→仕上げ<br>・デザイン→モデリング→リギング→モーション→ゲームエンジンに出力→シェーダー、アニメーション設定</span></dd>
+          <dd class="interview__answer__image">
+            <img src="<%= this.SITE_ROOT %>img/interviews/16318801/interview_02.png" alt="">
+          </dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>最後に一言お願いします。</span></dt>
+          <dd class="interview__answer"><span>Unity、Unrealいじってると時間を忘れます。</span></dd>
+        </dl>
+      </div>
+    </div>
+  </main>
+  <% include ../components/_footer %>
+</div>
+<%- include ../components/_modal %>
+<% include ../components/_scripts %>
+</body>
+</html>

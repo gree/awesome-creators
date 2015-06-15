@@ -1,0 +1,21 @@
+//colors
+$blue-base: #00a0dc;
+$gray-base: #888;
+$gray-light: #ccc;
+
+$text-base__color: $gray-base;
+$text-link__color: $blue-base;
+
+//z-index
+// main内のコンテンツ: 100未満
+// ヘッダ・フッタ: 1000未満
+// 全体のoverlayer: 10000未満
+$carousel__zIndex: 10;
+$panels__zIndex: 20;
+
+$footer__zIndex: 100;
+
+$modal__zIndex: 1000;
+
+// Scaffolding
+$main_paddingBottom: 70;

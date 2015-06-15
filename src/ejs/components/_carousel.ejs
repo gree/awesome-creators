@@ -1,0 +1,69 @@
+<div class="carousel">
+  <div class="carousel__indicators">
+    <ol id="carousel-main"><!--
+       --><li data-target="#carousel-slide" data-slide-to="0" class="active"></li><!--
+       --><li data-target="#carousel-slide" data-slide-to="1"></li><!--
+       --><li data-target="#carousel-slide" data-slide-to="2"></li><!--
+     --></ol>
+  </div>
+  <div id="carousel-slide" class="carousel__inner" role="listbox">
+    <div class="carousel__item active">
+      <% if (global_top) { %>
+      <img class="js__lazy" data-original="<%= this.SITE_ROOT %>img/carousel/header_cerberus_02.jpg" src="<%= this.SITE_ROOT %>img/carousel/header_cerberus_02_thumb.jpg" alt="後藤 仁のイラスト">
+      <% } else { %>
+      <img src="<%= this.SITE_ROOT %>img/carousel/header_cerberus_02.jpg" alt="後藤 仁のイラスト">
+      <% } %>
+      <a href="<%= this.SITE_ROOT %>creators/3693721.html">
+        <ul class="carousel__caption">
+          <li class="caption__icon">
+            <img src="<%= this.SITE_ROOT %>img/creator/3693721.png" alt="後藤 仁">
+          </li>
+          <li>
+            後藤 仁<br>
+            Hiroshi Goto
+          </li>
+          <li><span class="icon icon__1"></span></li>
+        </ul>
+      </a>
+    </div>
+    <div class="carousel__item">
+      <% if (global_top) { %>
+      <img class="js__lazy" data-original="<%= this.SITE_ROOT %>img/carousel/header_darkabyss_02.jpg" src="<%= this.SITE_ROOT %>img/carousel/header_darkabyss_02_thumb.jpg" alt="譚 正文のイラスト">
+      <% } else { %>
+      <img src="<%= this.SITE_ROOT %>img/carousel/header_darkabyss_02.jpg" alt="譚 正文のイラスト">
+      <% } %>
+
+      <a href="<%= this.SITE_ROOT %>creators/9316824.html">
+        <ul class="carousel__caption">
+          <li class="caption__icon">
+            <img src="<%= this.SITE_ROOT %>img/creator/9316824.png" alt="譚 正文">
+          </li>
+          <li>
+            譚 正文<br>
+            Zhengwen Tan
+          </li>
+          <li><span class="icon icon__1"></span></li>
+        </ul>
+      </a>
+    </div>
+    <div class="carousel__item">
+      <% if (global_top) { %>
+      <img class="js__lazy" data-original="<%= this.SITE_ROOT %>img/carousel/header_jet_01.jpg" src="<%= this.SITE_ROOT %>img/carousel/header_jet_01_thumb.jpg" alt="譚 正文のイラスト">
+      <% } else { %>
+      <img src="<%= this.SITE_ROOT %>img/carousel/header_jet_01.jpg" alt="譚 正文のイラスト">
+      <% } %>
+      <a href="<%= this.SITE_ROOT %>creators/9316824.html">
+        <ul class="carousel__caption">
+          <li class="caption__icon">
+            <img src="<%= this.SITE_ROOT %>img/creator/9316824.png" alt="譚 正文">
+          </li>
+          <li>
+            譚 正文<br>
+            Zhengwen Tan
+          </li>
+          <li><span class="icon icon__1"></span></li>
+        </ul>
+      </a>
+    </div>
+  </div>
+</div>

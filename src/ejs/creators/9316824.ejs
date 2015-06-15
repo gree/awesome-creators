@@ -1,0 +1,82 @@
+<% include ../_global %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Zhengwen Tan | GREE Creators Portfolio</title>
+<% include ../components/_head %>
+</head>
+<body>
+<div class="contents-wrapper">
+<% include ../components/_navbar %>
+  <main class="main">
+    <div class="biography">
+     <div class="container">
+        <ul class="breadcrumb"><!--
+          --><li><a href="<%= this.SITE_ROOT %>">Top</a></li><!--
+          --><li><a href="./">Creators</a></li><!--
+          --><li>Zhengwen Tan</li><!--
+        --></ul>
+        <div class="biography__inner">
+          <h1 class="biography__name">譚 正文<span class="biography__name__alphabet">Zhengwen Tan</span></h1>
+          <div class="biography__post">リードアーティスト<br>Wright Flyer Studios 2部 / Artグループ / Concept Artチーム</div>
+          <p class="biography__description">中国広州生まれ。中国広州美術学院を卒業後3Dアニメーション制作、玩具生産会社を経てグリー株式会社に入社。北京支社のデザインチームの立上げを担当後、現在はグリー本社でNativeゲームの新規プロダクト開発に携わる。（2015年6月現在）</p>
+          <a href="#interview" class="button-link">interview<span class="icon icon__2"></span></a>
+          <img src="<%= this.SITE_ROOT %>img/creator/9316824.png" alt="譚 正文" class="biography__portrait">
+        </div>
+     </div>
+    </div>
+
+    <%- include('../components/_portfoliolist_creator', {user_id: 9316824}); %>
+    <div class="interview" id="interview">
+      <div class="interview__inner">
+        <h2 class="interview__title">Interview</h2>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>仕事をする上で気をつけていることは何ですか？</span></dt>
+          <dd class="interview__answer"><span>まずは、新規プロダクトを立上げる際の世界観の方向性・独自性を大切にしています。<br>また、独自の世界観を作ったあとも、最後まで充実に再現することも重要だと思います。<br><br>企画の方から、「今回のテイストは『〇〇風＋〇〇風』にしてください』という依頼がよくあります。けれど、その通りにやると、見たことある特徴のないデザインになりがちです。<br>そこから考える事は、「〇〇風」よりも、「今回の企画にとってより適切なテイスト或いはデザイン性はないのか」、ということ。それを模索し、絵にして提案します。そこでなぜ自分こういうテイスト或いはデザインにしたのか、背景を説明して、理解してもらいます。そうすることで、企画の方は刺激を受け、そこから独自の世界観が生まれ始めます。特にその世界ならではのシンボルとなるデザインを多く画面に取り入れることで、ユーザーにも覚えてもらいやすいと思います。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>過去、印象に残っている仕事は何ですか？</span></dt>
+          <dd class="interview__answer"><span>北京支社のデザインチームを立上げながら、5つのプロダクトのディレクションを同時に行った時の事。制作期間が短かったし大変でしたが、同時に複数なテイストの絵を作ったり、監修したり、なかなか面白い体験でした。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>グリーでのやりがいは何ですか？</span></dt>
+          <dd class="interview__answer"><span>制作者として幅広く仕事が出来る事と、他職種の間の壁がなく自由に意見交換出来る事です。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>休日の過ごし方は？</span></dt>
+          <dd class="interview__answer"><span>映画、ゲーム、散策</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>頻繁に使用するツールはありますか？</span></dt>
+          <dd class="interview__answer"><span>Adobe Photoshop、Adobe Flash</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>尊敬している人は誰ですか？</span></dt>
+          <dd class="interview__answer"><span>岩井俊二さん</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>参考にしている参考書などはありますか？</span></dt>
+          <dd class="interview__answer"><span>色々ありますが、メカロボットの本はよく見てます。例えば、「ガンダム」シーリズ、「天元突破グレンラガン」など。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>なぜ現在の職業に就きたいと思ったのですか？</span></dt>
+          <dd class="interview__answer"><span>幼児園の時描いた絵を褒められたから。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>会社での一日（スケジュール）を教えてください。</span></dt>
+          <dd class="interview__answer"><span>大体3割会議、7割制作です。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>最後に一言お願いします。</span></dt>
+          <dd class="interview__answer"><span>皆の記憶に残る物を作りたいです。</span></dd>
+        </dl>
+      </div>
+    </div>
+  </main>
+  <% include ../components/_footer %>
+</div>
+<%- include ../components/_modal %>
+<% include ../components/_scripts %>
+</body>
+</html>

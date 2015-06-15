@@ -1,0 +1,124 @@
+
+.modal{
+  z-index: $modal__zIndex;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+
+  &.modal--hidden{
+    display: block;
+    visibility: hidden;
+  }
+
+  &.modal--show{
+    display: block;
+  }
+
+  .modal__body{
+    position: relative;
+    display: inline-block;
+    margin: 160px auto 0;
+    border: 10px solid #fff;
+    border-radius: 4px;
+
+    >img{
+      max-width: 940px;
+    }
+
+  }
+
+  .modal__footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 50px;
+    background-size: 12px;
+    background-repeat: repeat;
+    background-image: url('../img/common/background_stripe.svg');
+    background-color: rgba(0, 0, 0, .8);
+
+    .modal__footer__inner{
+      @include content-base;
+      padding: 5px 10px;
+      overflow: hidden;
+    }
+  }
+
+
+  .modal__information{
+    display: table;
+    border-collapse: collapse;
+    height: 40px;
+
+    >li{
+      display: table-cell;
+      border-left: 1px solid $gray-base;
+      vertical-align: middle;
+      font-size: 12px;
+      line-height: 1.4;
+
+      &:last-child{
+        border-right: 1px solid $gray-base;
+      }
+
+      &.modal__creator{
+        padding: 0 5px 0 20px;
+
+        img{
+          border: 1px solid $gray-base;
+          background-color: #fff;
+          width: 30px;
+          height: 30px;
+          border-radius: 16px;
+          vertical-align: middle;
+        }
+      }
+
+      &.modal__name{
+        padding: 0 20px 0 0;
+        border: 0;
+        padding-left: 0;
+      }
+
+      &.modal__product{
+        padding: 0 20px;
+
+        img{
+          height: 30px;
+        }
+      }
+
+      &.modal__tag{
+        padding: 0 20px;
+      }
+    }
+  }
+
+  .modal__background{
+    background-color: rgba(0, 0, 0, .8);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .modal__close{
+    position: absolute;
+    top: -60px;
+    right: -60px;
+
+    .icon__5{
+
+      &:hover{
+        background-position: -50px -44px;
+      }
+    }
+  }
+}

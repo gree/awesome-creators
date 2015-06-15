@@ -1,0 +1,67 @@
+<% include ../_global %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Creators | GREE Creators Portfolio</title>
+<% include ../components/_head %>
+</head>
+<body>
+<div class="contents-wrapper">
+<% include ../components/_navbar %>
+  <main class="main">
+    <div class="container">
+      <%- include('../components/_carousel', {global_top: false}); %>
+      <div class="panels panels--creators">
+        <div class="panels__header">
+          <ul class="filter">
+            <li>
+              <a href="<%= this.SITE_ROOT %>">
+                <span class="icon icon__4"></span>Works
+              </a>
+            </li>
+            <li class="active">
+              <span class="icon icon__4 active"></span>Creators
+            </li>
+            <li>
+              <a href="<%= this.SITE_ROOT %>categories/">
+                <span class="icon icon__4"></span>Categories
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="panels__body">
+          <%
+          for(var i=0;i<creators.length;i++){
+            var creator=creators[i];
+            var id=creator[1];
+            var name=creator[2];
+            var nameEn = creator[3];
+          %>
+          <div class="panel">
+            <a class="panel__body" href="<%= id%>.html">
+              <img src="<%= this.SITE_ROOT %>img/creator/<%= id %>.png" alt="">
+            </a>
+            <div class="panel__footer">
+              <a href="<%= id%>.html">
+                <ul class="panel__creator">
+                  <li>
+                    <%= name %><br>
+                    <%= nameEn %>
+                  </li>
+                  <li><span class="icon icon__1"></span></li>
+                </ul>
+              </a>
+            </div>
+          </div>
+          <% } %>
+        </div>
+      </div>
+    </div>
+  </main>
+  <% include ../components/_footer %>
+</div>
+<script src="<%= this.SITE_ROOT %>js/vendor/jquery.min.js"></script>
+<script src="<%= this.SITE_ROOT %>js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+.signboard {
+  position: relative;
+
+  &.signboard--black {
+    background-color: #000;
+  }
+
+  &.signboard--white {
+    background-color: #fff;
+  }
+
+  >img {
+    display: block;
+    margin: 0 auto;
+    height: 300px;
+  }
+
+  .container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20px;
+  }
+}

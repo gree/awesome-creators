@@ -1,0 +1,90 @@
+<% include ../_global %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Jiro Nagasaki | GREE Creators Portfolio</title>
+<% include ../components/_head %>
+</head>
+<body>
+<div class="contents-wrapper">
+  <% include ../components/_navbar %>
+  <main class="main">
+    <div class="biography">
+     <div class="container">
+        <ul class="breadcrumb"><!--
+          --><li><a href="<%= this.SITE_ROOT %>">Top</a></li><!--
+          --><li><a href="./">Creators</a></li><!--
+          --><li>Jiro Nagasaki</li><!--
+        --></ul>
+        <div class="biography__inner">
+          <h1 class="biography__name">長﨑 二郎<span class="biography__name__alphabet">Jiro Nagasaki</span></h1>
+          <div class="biography__post">リードUI/UXデザイナー<br>Wright Flyer Studios 2部 / Artグループ / UI UX チーム</div>
+          <p class="biography__description">石川県生まれ。多摩美術大学（絵画学科）を卒業後コンシューマゲーム制作会社を経てグリー株式会社に入社。「海賊王国コロンブス」など、３タイトルのアートディレクター、マネージメント業務を経て、現在はNativeゲームの新規プロダクト開発に携わる。（2015年6月現在）</p>
+          <a href="#interview" class="button-link">interview<span class="icon icon__2"></span></a>
+          <img src="<%= this.SITE_ROOT %>img/creator/1230204.png" alt="長﨑 二郎" class="biography__portrait">
+        </div>
+     </div>
+    </div>
+
+    <%- include('../components/_portfoliolist_creator', {user_id: 1230204}); %>
+    <div class="interview" id="interview">
+      <div class="interview__inner">
+        <h2 class="interview__title">Interview</h2>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>仕事をする上で気をつけていることは何ですか？</span></dt>
+          <dd class="interview__answer"><span>製作物のデザインに対して、新規性を盛り込む事。<br>開発者という目線ではなく、お客様にどう見えるかを意識する事。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>過去、印象に残っている仕事は何ですか？</span></dt>
+          <dd class="interview__answer"><span>「海賊王国コロンブス」の海外版としてリリースした「PiratesAge」を、カードイラストからUIまで、全てのデザインアセットを一新してカルチャライズ出来た事。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>グリーでのやりがいは何ですか？</span></dt>
+          <dd class="interview__answer"><span>個人の成果が職種に関係なく報われる点。<br>自主性が求められる社風。<br>社外に向けて講演する機会が多く、刺激になる点。</span></dd>
+          <dd class="interview__answer__image">
+            <img src="<%= this.SITE_ROOT %>img/interviews/1230204/interview_01.png" alt="">
+          </dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>休日の過ごし方は？</span></dt>
+          <dd class="interview__answer"><span>ランニング<br>蕎麦屋で一杯<br>買い物<br>読書<br>映画<br>陶芸
+          </span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>頻繁に使用するツールはありますか？</span></dt>
+          <dd class="interview__answer"><span>Adobe Photoshop</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>尊敬している人は誰ですか？</span></dt>
+          <dd class="interview__answer"><span>前職の上司。めったに褒めない所、答え与えず思考させ成長させるマネジメント。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>参考にしている参考書などはありますか？</span></dt>
+          <dd class="interview__answer"><span>「プロトタイピング実践ガイド スマホアプリの効率的なデザイン手法」（著者：深津 貴之、 荻野 博章、出版：インプレス）<br>「スマートフォンのためのUIデザイン ユーザー体験に大切なルールとパターン」（著者：池田 拓司、出版：ソフトバンククリエイティブ）<br>「インタフェースデザインの心理学」（著者：Susan Weinschenk氏、出版：オライリー・ジャパン）</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>なぜ現在の職業に就きたいと思ったのですか？</span></dt>
+          <dd class="interview__answer"><span>ゲームが好きで、絵を仕事に活かしたかった為。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>業務外で自主制作をされていますか？</span></dt>
+          <dd class="interview__answer"><span>制作ではないですが、競合他社のUIデザインを自分なりに分析・研究してます。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>製作過程について教えて下さい。</span></dt>
+          <dd class="interview__answer"><span>1. UIの仕様を確認する<br>2. UIのデザインモック、必要に応じてワイヤーフレームを製作する<br>3. 各担当に向けて仕様やデザイン要件を満たしているかを確認する<br>4. 組み込み準備<br>5. 実装後チェック＆修正</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>最後に一言お願いします。</span></dt>
+          <dd class="interview__answer"><span>お客様に楽しんでいただけるゲームを鋭意開発中です！</span></dd>
+        </dl>
+      </div>
+    </div>
+  </main>
+  <% include ../components/_footer %>
+</div>
+<%- include ../components/_modal %>
+<% include ../components/_scripts %>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<% include ../_global %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Tsuneo Sawai | GREE Creators Portfolio</title>
+<% include ../components/_head %>
+</head>
+<body>
+<div class="contents-wrapper">
+<% include ../components/_navbar %>
+  <main class="main">
+    <div class="biography">
+     <div class="container">
+        <ul class="breadcrumb"><!--
+          --><li><a href="<%= this.SITE_ROOT %>">Top</a></li><!--
+          --><li><a href="./">Creators</a></li><!--
+          --><li>Tsuneo Sawai</li><!--
+        --></ul>
+        <div class="biography__inner">
+          <h1 class="biography__name">澤井 常生<span class="biography__name__alphabet">Tsuneo Sawai</span></h1>
+          <div class="biography__post">リードアニメーター<br>Wright Flyer Studios 3部 / Artグループ / Tech Art and Animation チーム</div>
+          <p class="biography__description">大阪府生まれ。コンピュータ総合学園HAL卒業後、Flash制作を主体としたWebプロダクションを転々としながらアニメーション・プログラミングスキルを習得。グリー株式会社に入社後は、「アバター」「海賊王国コロンブス」「探検ドリランド」の運用業務を担当後、現在はNativeゲームの新規プロダクト開発に携わる。（2015年6月現在）</p>
+          <a href="#interview" class="button-link">interview<span class="icon icon__2"></span></a>
+          <img src="<%= this.SITE_ROOT %>img/creator/2105397.png" alt="澤井 常生" class="biography__portrait">
+        </div>
+     </div>
+    </div>
+
+    <%- include('../components/_portfoliolist_creator', {user_id: 2105397}); %>
+    <div class="interview" id="interview">
+      <div class="interview__inner">
+        <h2 class="interview__title">Interview</h2>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>仕事をする上で気をつけていることは何ですか？</span></dt>
+          <dd class="interview__answer"><span>スケジュールが決まっている中で、最大限にいい表現をすることを常に模索しています。<br>自分が今までやったことの無い技術的な要素を必ず入れます。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>過去、印象に残っている仕事は何ですか？</span></dt>
+          <dd class="interview__answer"><span>大型IP案件での新規プロダクトの制作を行っていたことがあり、自社のクオリティ基準だけでなくIP元の基準があったため、最終的な摺合せがとても大変でした。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>グリーでのやりがいは何ですか？</span></dt>
+          <dd class="interview__answer"><span>優秀なエンジニアやアートの方との日々の鍛練がとても楽しいと思っています。<br>様々な経歴の人がいるので単純にゲームが作りたいからという人だけではない環境も魅力です。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>休日の過ごし方は？</span></dt>
+          <dd class="interview__answer"><span>登山、ゲーム、サイト制作</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>頻繁に使用するツールはありますか？</span></dt>
+          <dd class="interview__answer"><span>Adobe Flash、Adobe After Effects、Spine</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>尊敬している人は誰ですか？</span></dt>
+          <dd class="interview__answer"><span>hide、Marc Newson</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>参考にしている参考書などはありますか？</span></dt>
+          <dd class="interview__answer"><span>「ディズニーアニメーション 生命を吹き込む魔法」（著者：フランク･トーマス 、オーリー･ジョンストン、出版：徳間書店）</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>アニメーションはどのように制作されてるのですか？</span></dt>
+          <dd class="interview__answer"><span>最近はSpineでのキャラクターアニメーション制作が多いです。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>なぜ現在の職業に就きたいと思ったのですか？</span></dt>
+          <dd class="interview__answer"><span>Flashが好きだったから。<br>ちなみに、ずっとFlashでいきたいと思っているところ、途中で市場のニーズが無くなったかと思われた時期があった。けれども、SpineやLWFなどを使用することでFlashでのスキルは生きています。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>業務外で自主制作をされていますか？</span></dt>
+          <dd class="interview__answer"><span>現在作っている最中です。まだ公開していませんが。以前はFlashサイトのリンク集を集めたFLASH MANIAというサイトを開発・運営していました。</span></dd>
+          <dd class="interview__answer__image">
+            <img src="<%= this.SITE_ROOT %>img/interviews/2105397/interview_01.jpg" alt="">
+          </dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>最後に一言お願いします。</span></dt>
+          <dd class="interview__answer"><span>必ずヒットするゲームを生み出します！</span></dd>
+        </dl>
+      </div>
+    </div>
+  </main>
+  <% include ../components/_footer %>
+</div>
+<%- include ../components/_modal %>
+<% include ../components/_scripts %>
+</body>
+</html>

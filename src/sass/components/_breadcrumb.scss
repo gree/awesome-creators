@@ -1,0 +1,26 @@
+.breadcrumb{
+
+  li{
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 12px;
+    vertical-align: middle;
+
+    a{
+      @include text-link;
+    }
+
+    &::after{
+      content: '＞';
+      display: inline-block;
+      margin-left: 10px;
+    }
+
+    &:last-child{
+
+      &::after{
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+<% include ../../_global %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>UI | GREE Creators Portfolio</title>
+<% include ../../components/_head %>
+</head>
+<body>
+<div class="contents-wrapper">
+  <% include ../../components/_navbar %>
+  <main class="main">
+
+    <div class="signboard signboard--black">
+      <img src="<%= this.SITE_ROOT %>img/tags/ui.png" alt="">
+      <div class="container">
+        <ul class="breadcrumb"><!--
+         --><li><a href="../../">Top</a></li><!--
+         --><li><a href="../">Categories</a></li><!--
+         --><li>UI</li><!--
+        --></ul>
+      </div>
+    </div>
+
+    <div class="portfolio-list">
+      <div class="portfolio-list">
+        <div class="panels panels--works" id="panels">
+          <div class="panels__body js-masonry" data-masonry-options='{"columnWidth":220,"itemSelector":".panel","gutter":20}'>
+            <% for(var i = 0; i < portfolios.length; i++) {%>
+            <% if (portfolios[i].tag_id == 'ui' ) { %>
+            <% include ../../components/_portfoliolist %>
+            <% } %>
+            <% } %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <% include ../../components/_footer %>
+</div>
+
+<% include ../../components/_modal %>
+
+<% include ../../components/_scripts %>
+</body>
+</html>

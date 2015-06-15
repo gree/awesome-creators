@@ -1,0 +1,24 @@
+.button-link{
+  display: inline-block;
+  width: 120px;
+  height: 30px;
+  border: 1px solid $blue-base;
+  border-radius: 15px;
+  line-height: 28px;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 12px;
+
+  .icon{
+    margin-left: 10px;
+  }
+
+  &:hover{
+    border-color: $text-base__color;
+    color: $text-base__color;
+
+    .icon__2{
+      background-position: -14px -8px;
+    }
+  }
+}

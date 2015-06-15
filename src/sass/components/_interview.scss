@@ -1,0 +1,70 @@
+.interview{
+  background-color: #fff;
+  border-top: 1px solid $gray-base;
+  margin-bottom: #{$main_paddingBottom * -1}px;
+
+  .interview__inner{
+    @include content-base;
+  }
+
+  .interview__title{
+    margin-bottom: 65px;
+    padding: 50px 0 45px;
+    border-bottom: 2px solid $gray-base;
+    text-align: center;
+  }
+
+  .interview__faq{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 80px;
+
+    .interview__question{
+      @include clearfix;
+      margin-bottom: 15px;
+      color: $blue-base;
+      font-size: 20px;
+
+      &::before{
+        content: 'Ｑ.';
+        display: block;
+        font-size: 30px;
+        width: 50px;
+        float: left;
+      }
+
+      span{
+        display: block;
+        margin-left: 50px;
+        color: $blue-base;
+      }
+    }
+
+    .interview__answer{
+      margin-bottom: 35px;
+
+      &::before{
+        content: 'Ａ.';
+        display: block;
+        font-size: 30px;
+        width: 50px;
+        float: left;
+      }
+
+      span{
+        display: block;
+        margin-left: 50px;
+      }
+    }
+
+    .interview__answer__image{
+      text-align: center;
+
+      img{
+        width: 360px;
+        margin: 0 10px;
+      }
+    }
+  }
+}

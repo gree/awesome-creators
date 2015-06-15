@@ -1,0 +1,85 @@
+<% include ../_global %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Satoshi Ida | GREE Creators Portfolio</title>
+<% include ../components/_head %>
+</head>
+<body>
+<div class="contents-wrapper">
+<% include ../components/_navbar %>
+  <main class="main">
+    <div class="biography">
+     <div class="container">
+        <ul class="breadcrumb"><!--
+          --><li><a href="./">Top</a></li><!--
+          --><li><a href="./">Creators</a></li><!--
+          --><li>Satoshi Ida</li><!--
+        --></ul>
+        <div class="biography__inner">
+          <h1 class="biography__name">井田 聡<span class="biography__name__alphabet">Satoshi Ida</span></h1>
+          <div class="biography__post">リードアーティスト<br>Web Game Studio部 / Artグループ</div>
+          <p class="biography__description">兵庫県生まれ。京都精華大学を卒業後、DTPデザイナー、アーケード／コンソールゲーム会社、モバイルミドルウェア開発会社を経てグリー株式会社に入社。「モンプラ」のアートディレクター、「神統記ゼウスマキア」のUIデザイナーを担当後、現在はWebゲーム既存プロダクトのアートセクションマネージャーとして勤務。（2015年6月現在）</p>
+          <a href="#interview" class="button-link">interview<span class="icon icon__2"></span></a>
+          <img src="<%= this.SITE_ROOT %>img/creator/12048523.png" alt="井田 聡" class="biography__portrait">
+        </div>
+     </div>
+    </div>
+
+    <%- include('../components/_portfoliolist_creator', {user_id: false}); %>
+    <div class="interview" id="interview">
+      <div class="interview__inner">
+        <h2 class="interview__title">Interview</h2>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>仕事をする上で気をつけていることは何ですか？</span></dt>
+          <dd class="interview__answer"><span>プロダクトの方向性、求められている絵、自分の作りたい絵、そこにかかる時間（コスト）のバランス、をいつも意識してます。そして時には、任せる所は任す！という判断も大切です。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>過去、印象に残っている仕事は何ですか？</span></dt>
+          <dd class="interview__answer"><span>担当ゲームのSP版のリニューアルで、時間が無いのに、色々と好き勝手にやらせて頂いた事。<br>大手コンソール企業と協業で作った大型タイトルにて、非力な自分を再確認した事。<br>マネジメント業務にて、人とモノとお金の回り方を考えたりする事。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>グリーでのやりがいは何ですか？</span></dt>
+          <dd class="interview__answer"><span>業界内の変化は激しいものの、その中で先端を追いかけ続けられる体制があること。走り続けられる環境があること。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>休日の過ごし方は？</span></dt>
+          <dd class="interview__answer"><span>子供とのコミュニケーションや家族でのイベント。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>尊敬している人は誰ですか？</span></dt>
+          <dd class="interview__answer"><span>最後までモノを作りきる人。<br>事を成し遂げている人。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>なぜ現在の職業に就きたいと思ったのですか？</span></dt>
+          <dd class="interview__answer"><span>ゼロから何かを作り出す事をやりたくて、<br>自分の出来る事で一番近かったのがゲームだったから。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>業務外で自主制作をされていますか？</span></dt>
+          <dd class="interview__answer"><span>ゲームを作りたい気持ちはあり、小ネタを考えてはメモをとっています。<br>社内開催のゲームコンテスト「mock-1」にも参加しましたが、時間の制約に体力がなかなかついてこなかったです（笑）</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>製作過程について教えて下さい。</span></dt>
+          <dd class="interview__answer"><span>先ずは紙と鉛筆でアイディアスケッチ。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>会社での一日（スケジュール）を教えてください。</span></dt>
+          <dd class="interview__answer"><span>9:20には出社。担当プロダクトの朝会を通してメンバーの状況を確認。<br>各種MTGに参加しつつ資料作成や採用面接等をします。<br>その他ではプロダクトが抱える課題の解決や、<br>最近では、専門学校での登壇の機会もあり、<br>半日出掛けることもあります。<br>そして、早く帰れる時は早く帰ります。</span></dd>
+          <dd class="interview__answer__image">
+            <img src="<%= this.SITE_ROOT %>img/interviews/12048523/interview_01.jpg" alt="">
+          </dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>最後に一言お願いします。</span></dt>
+          <dd class="interview__answer"><span>面白いものを作りたいです。</span></dd>
+        </dl>
+      </div>
+    </div>
+  </main>
+  <% include ../components/_footer %>
+</div>
+<%- include ../components/_modal %>
+<% include ../components/_scripts %>
+</body>
+</html>

@@ -1,0 +1,11 @@
+.looktop{
+  @include content-base;
+  position: relative;
+
+  .looktop__symbol{
+    position: absolute;
+    top: -58px;
+    right: 0;
+  }
+}
+

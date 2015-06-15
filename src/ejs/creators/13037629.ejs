@@ -1,0 +1,93 @@
+<% include ../_global %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Shinichiro Hamasaka | GREE Creators Portfolio</title>
+<% include ../components/_head %>
+</head>
+<body>
+<div class="contents-wrapper">
+<% include ../components/_navbar %>
+  <main class="main">
+    <div class="biography">
+     <div class="container">
+        <ul class="breadcrumb"><!--
+          --><li><a href="<%= this.SITE_ROOT %>">Top</a></li><!--
+          --><li><a href="./">Creators</a></li><!--
+          --><li>Shinichiro Hamasaka</li><!--
+        --></ul>
+        <div class="biography__inner">
+          <h1 class="biography__name">濱坂 真一郎<span class="biography__name__alphabet">Shinichiro Hamasaka</span></h1>
+          <div class="biography__post">リードアーティスト<br>Wright Flyer Studios 1部 / Artグループ / 消滅都市チーム</div>
+          <p class="biography__description">石川県生まれ。コンシューマー業界でのデザイナー業務を経てグリー株式会社に入社。入社後は「ガンダムマスターズ」「絶対防衛レヴィアタン」等のタイトルでアートを担当。その後に「消滅都市」のアートディレクターとして開発・運営に携わる。（2015年6月現在）</p>
+          <a href="#interview" class="button-link">interview<span class="icon icon__2"></span></a>
+          <img src="<%= this.SITE_ROOT %>img/creator/13037629.png" alt="濱坂 真一郎" class="biography__portrait">
+        </div>
+     </div>
+    </div>
+
+    <%- include('../components/_portfoliolist_creator', {user_id: 13037629}); %>
+    <div class="interview" id="interview">
+      <div class="interview__inner">
+        <h2 class="interview__title">Interview</h2>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>仕事をする上で気をつけていることは何ですか？</span></dt>
+          <dd class="interview__answer"><span>関わるタイトルにも拠りますが、不要な線、不要なボリュームを可能な限り廃した<br>シンプルなシルエットのイラストを完成させる事を心がけています。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>過去、印象に残っている仕事は何ですか？</span></dt>
+          <dd class="interview__answer"><span>ソーシャルゲーム業界の洗礼を受けた、という点で「ガンダムマスターズ」。<br>キャラクターデザインを手がけた点では「消滅都市」が印象に残っています。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>グリーでのやりがいは何ですか？</span></dt>
+          <dd class="interview__answer"><span>良くも悪くも業界が未成熟。業務の細分化が進んでおらず、当人のモチベーション次第で様々な業務にチャレンジする事が可能な部分にやりがいを感じています。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>休日の過ごし方は？</span></dt>
+          <dd class="interview__answer"><span>部屋の掃除。家事など。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>頻繁に使用するツールはありますか？</span></dt>
+          <dd class="interview__answer"><span>Adobe Photoshop、ペイントツールSAI</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>尊敬している人は誰ですか？</span></dt>
+          <dd class="interview__answer"><span>才能のあるデザイナーを例外なく尊敬しています。ちなみに、次の２点を重視して、才能の多寡を見る事が多いです。<br><br>・引き出し（デザインのソース元や得意なモチーフの事）の豊かさ<br>・最適解に至るまでの時間の短さ</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>参考にしている参考書などはありますか？</span></dt>
+          <dd class="interview__answer"><span>中村成一氏の「人を描くのって楽しいね」シリーズ全般（廣済堂マンガ工房　出版）</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>なぜ現在の職業に就きたいと思ったのですか？</span></dt>
+          <dd class="interview__answer"><span>自分（自分を含めたチーム）の作った物で世の中に影響を与えたいと思ったからです。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>製作過程について教えて下さい。</span></dt>
+          <dd class="interview__answer"><span>必要な画像・素材が何であるか？について関係者（プランナーやアーティスト等）と合意を取るところから始めます。その後ラフを起し、こちらも合意が取れるまでやり取りを行い、完成原稿までそれを繰り返します。</span></dd>
+          <dd class="interview__answer__image">
+            <img src="<%= this.SITE_ROOT %>img/interviews/13037629/interview_01.png" alt="">
+          </dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>業務外で自主制作をされていますか？</span></dt>
+          <dd class="interview__answer"><span>趣味で3Dモデリング等をする事があります。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>製作過程について教えて下さい。</span></dt>
+          <dd class="interview__answer"><span>必要な画像・素材が何であるか？について関係者（プランナーやアーティスト等）と合意を取るところから始めます。その後ラフを起し、こちらも合意が取れるまでやり取りを行い、完成原稿までそれを繰り返します。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>最後に一言お願いします。</span></dt>
+          <dd class="interview__answer"><span>皆さんは「グリーのデザイナー」と聞いて、どのような印象を持たれていますか？「六本木に社屋を構えた華やかな会社」というイメージを持つ方も多いかと思いますが、ストイックに自身の業務とスキルアップに向き合うような。意外に堅いデザイナーが多いのです。今、我々は、共にアプリを作っていく仲間を募集しています。一緒に面白い物を作ってみませんか？</span></dd>
+        </dl>
+      </div>
+    </div>
+  </main>
+  <% include ../components/_footer %>
+</div>
+<%- include ../components/_modal %>
+<% include ../components/_scripts %>
+</body>
+</html>

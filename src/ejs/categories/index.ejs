@@ -1,0 +1,308 @@
+<% include ../_global %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Categories | GREE Creators Portfolio</title>
+<% include ../components/_head %>
+</head>
+<body>
+<div class="contents-wrapper">
+  <% include ../components/_navbar %>
+  <main class="main">
+    <div class="container">
+      <%- include('../components/_carousel', {global_top: false}); %>
+      <div class="panels panels--products">
+        <div class="panels__header">
+          <ul class="filter">
+            <li>
+              <a href="<%= this.SITE_ROOT %>">
+                <span class="icon icon__4"></span>Works
+              </a>
+            </li>
+            <li>
+              <a href="<%= this.SITE_ROOT %>creators/">
+                <span class="icon icon__4"></span>Creators
+              </a>
+            </li>
+            <li class="active">
+              <span class="icon icon__4 active"></span>Categories
+            </li>
+          </ul>
+        </div>
+        <p class="categories__heading">Products</p>
+
+        <div class="panels__body">
+          <div class="panel">
+            <a href="products/tower.html" class="panel__body">
+              <img src="<%= this.SITE_ROOT %>img/products/tower.png" alt="">
+            </a>
+            <div class="panel__footer">
+              <a href="products/tower.html">
+                <ul class="panel__product">
+                  <li>
+                    タワーライジング
+                  </li>
+                  <li><span class="icon icon__1"></span></li>
+                </ul>
+              </a>
+            </div>
+          </div>
+          <div class="panel">
+            <a href="products/puzzque.html" class="panel__body">
+              <img src="<%= this.SITE_ROOT %>img/products/puzzque.png" alt="">
+            </a>
+            <div class="panel__footer">
+              <a href="products/puzzque.html">
+                <ul class="panel__product">
+                  <li>
+                    パズクエ
+                  </li>
+                  <li><span class="icon icon__1"></span></li>
+                </ul>
+              </a>
+            </div>
+          </div>
+          <div class="panel">
+            <a href="products/fruit.html" class="panel__body">
+              <img src="<%= this.SITE_ROOT %>img/products/fruit.png" alt="">
+            </a>
+            <div class="panel__footer">
+              <a href="products/fruit.html">
+                <ul class="panel__product">
+                  <li>
+                    Fruit Journey ※
+                  </li>
+                  <li><span class="icon icon__1"></span></li>
+                </ul>
+              </a>
+            </div>
+          </div>
+          <div class="panel">
+            <a href="products/dragonsparty.html" class="panel__body">
+              <img src="<%= this.SITE_ROOT %>img/products/dragonsparty.png" alt="">
+            </a>
+            <div class="panel__footer">
+              <a href="products/dragonsparty.html">
+                <ul class="panel__product">
+                  <li>
+                    ドラゴンズパーティー 五神竜と7つのレシピ ※
+                  </li>
+                  <li><span class="icon icon__1"></span></li>
+                </ul>
+              </a>
+            </div>
+          </div>
+          <div class="panel">
+            <a href="products/lostlandtactics.html" class="panel__body">
+              <img src="<%= this.SITE_ROOT %>img/products/lostlandtactics.png" alt="">
+            </a>
+            <div class="panel__footer">
+              <a href="products/lostlandtactics.html">
+                <ul class="panel__product">
+                  <li>
+                    ロストランドタクティクス
+                  </li>
+                  <li><span class="icon icon__1"></span></li>
+                </ul>
+              </a>
+            </div>
+          </div>
+          <div class="panel">
+            <a href="products/shometsu.html" class="panel__body">
+              <img src="<%= this.SITE_ROOT %>img/products/shometsu.png" alt="">
+            </a>
+            <div class="panel__footer">
+              <a href="products/shometsu.html">
+                <ul class="panel__product">
+                  <li>
+                    消滅都市
+                  </li>
+                  <li><span class="icon icon__1"></span></li>
+                </ul>
+              </a>
+            </div>
+          </div>
+          <div class="panel">
+            <a href="products/devil.html" class="panel__body">
+              <img src="<%= this.SITE_ROOT %>img/products/devil.png" alt="">
+            </a>
+            <div class="panel__footer">
+              <a href="products/devil.html">
+                <ul class="panel__product">
+                  <li>
+                    ドリランド 魔王軍vs勇者！
+                  </li>
+                  <li><span class="icon icon__1"></span></li>
+                </ul>
+              </a>
+            </div>
+          </div>
+          <div class="panel">
+            <a href="products/leviathan.html" class="panel__body">
+              <img src="<%= this.SITE_ROOT %>img/products/leviathan.png" alt="">
+            </a>
+            <div class="panel__footer">
+              <a href="products/leviathan.html">
+                <ul class="panel__product">
+                  <li>
+                    絶対防衛レヴィアタン ※
+                  </li>
+                  <li><span class="icon icon__1"></span></li>
+                </ul>
+              </a>
+            </div>
+          </div>
+          <div class="panel">
+            <a href="products/hakoniwa.html" class="panel__body">
+              <img src="<%= this.SITE_ROOT %>img/products/hakoniwa.png" alt="">
+            </a>
+            <div class="panel__footer">
+              <a href="products/hakoniwa.html">
+                <ul class="panel__product">
+                  <li>
+                    ハコニワ ふしぎな手紙とどうぶつ島
+                  </li>
+                  <li><span class="icon icon__1"></span></li>
+                </ul>
+              </a>
+            </div>
+          </div>
+          <div class="panel">
+            <a href="products/darkabyss.html" class="panel__body">
+              <img src="<%= this.SITE_ROOT %>img/products/darkabyss.png" alt="">
+            </a>
+            <div class="panel__footer">
+              <a href="products/darkabyss.html">
+                <ul class="panel__product">
+                  <li>
+                    Dark Abyss ※
+                  </li>
+                  <li><span class="icon icon__1"></span></li>
+                </ul>
+              </a>
+            </div>
+          </div>
+          <div class="panel">
+            <a href="products/fishingstar.html" class="panel__body">
+              <img src="<%= this.SITE_ROOT %>img/products/fishingstar.png" alt="">
+            </a>
+            <div class="panel__footer">
+              <a href="products/fishingstar.html">
+                <ul class="panel__product">
+                  <li>
+                    Fishing Star ※
+                  </li>
+                  <li><span class="icon icon__1"></span></li>
+                </ul>
+              </a>
+            </div>
+          </div>
+          <div class="panel">
+            <a href="products/pirates.html" class="panel__body">
+              <img src="<%= this.SITE_ROOT %>img/products/pirates.png" alt="">
+            </a>
+            <div class="panel__footer">
+              <a href="products/pirates.html">
+                <ul class="panel__product">
+                  <li>
+                    Pirates Age ※
+                  </li>
+                  <li><span class="icon icon__1"></span></li>
+                </ul>
+              </a>
+            </div>
+          </div>
+          <div class="panel">
+            <a href="products/sangoku.html" class="panel__body">
+              <img src="<%= this.SITE_ROOT %>img/products/sangoku.png" alt="">
+            </a>
+            <div class="panel__footer">
+              <a href="products/sangoku.html">
+                <ul class="panel__product">
+                  <li>
+                    三国神記 ※
+                  </li>
+                  <li><span class="icon icon__1"></span></li>
+                </ul>
+              </a>
+            </div>
+          </div>
+          <div class="panel">
+            <a href="products/cerberus.html" class="panel__body">
+              <img src="<%= this.SITE_ROOT %>img/products/cerberus.png" alt="">
+            </a>
+            <div class="panel__footer">
+              <a href="products/cerberus.html">
+                <ul class="panel__product">
+                  <li>
+                    聖戦ケルベロス
+                  </li>
+                  <li><span class="icon icon__1"></span></li>
+                </ul>
+              </a>
+            </div>
+          </div>
+          <div class="panel">
+            <a href="products/columbus.html" class="panel__body">
+              <img src="<%= this.SITE_ROOT %>img/products/columbus.png" alt="">
+            </a>
+            <div class="panel__footer">
+              <a href="products/columbus.html">
+                <ul class="panel__product">
+                  <li>
+                    海賊王国コロンブス
+                  </li>
+                  <li><span class="icon icon__1"></span></li>
+                </ul>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panels panels--tags">
+        <p class="categories__heading">Tags</p>
+        <div class="panels__body panels__body--tags">
+          <a href="tags/illust.html" class="panel">
+            <div class="panel__body">
+              <ul class="panel__tag">
+                <li>
+                  イラスト
+                </li>
+                <li><span class="icon icon__1"></span></li>
+              </ul>
+            </div>
+          </a>
+          <a href="tags/animation.html" class="panel">
+            <div class="panel__body">
+              <ul class="panel__tag">
+                <li>
+                  アニメーション
+                </li>
+                <li><span class="icon icon__1"></span></li>
+              </ul>
+            </div>
+          </a>
+          <a href="tags/ui.html" class="panel">
+            <div class="panel__body">
+              <ul class="panel__tag">
+                <li>
+                  UI
+                </li>
+                <li><span class="icon icon__1"></span></li>
+              </ul>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="notes">
+        ※ 本タイトルはサービスを終了しております。
+      </div>
+    </div>
+  </main>
+  <% include ../components/_footer %>
+</div>
+<% include ../components/_scripts %>
+</body>
+</html>

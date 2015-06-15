@@ -1,0 +1,82 @@
+<% include ../_global %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Gaku Kawamura | GREE Creators Portfolio</title>
+<% include ../components/_head %>
+</head>
+<body>
+<div class="contents-wrapper">
+<% include ../components/_navbar %>
+  <main class="main">
+    <div class="biography">
+     <div class="container">
+        <ul class="breadcrumb"><!--
+          --><li><a href="<%= this.SITE_ROOT %>">Top</a></li><!--
+          --><li><a href="./">Creators</a></li><!--
+          --><li>Gaku Kawamura</li><!--
+        --></ul>
+        <div class="biography__inner">
+          <h1 class="biography__name">河村 岳<span class="biography__name__alphabet">Gaku Kawamura</span></h1>
+          <div class="biography__post">リードアーティスト<br>X Production部 / Art チーム</div>
+          <p class="biography__description">長野県生まれ。電気通信大学（機械制御工学科）入学後、コンシューマーゲームメーカー制作会社を経てグリー株式会社に入社。聖戦ケルベロスのアートディレクターを担当後、現在はNativeゲームの新規プロダクト開発に携わる。</p>
+          <a href="#interview" class="button-link">interview<span class="icon icon__2"></span></a>
+          <img src="<%= this.SITE_ROOT %>img/creator/10060074.png" alt="河村 岳" class="biography__portrait">
+        </div>
+     </div>
+    </div>
+
+    <%- include('../components/_portfoliolist_creator', {user_id: 10060074}); %>
+    <div class="interview" id="interview">
+      <div class="interview__inner">
+        <h2 class="interview__title">Interview</h2>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>仕事をする上で気をつけていることは何ですか？</span></dt>
+          <dd class="interview__answer"><span>目的を明確にすることと、デザイン面から目的をより良い状態で達成できる方法を考えることです。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>過去、印象に残っている仕事は何ですか？</span></dt>
+          <dd class="interview__answer"><span>Yahoo!さんとのジョイントベンチャーである、ジクシーズ株式会社の立上げメンバーとして、新規ゲーム制作に携わったことです。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>グリーでのやりがいは何ですか？</span></dt>
+          <dd class="interview__answer"><span>自分のつくったものを直接ユーザーに届けられることです。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>休日の過ごし方は？</span></dt>
+          <dd class="interview__answer"><span>現在は、主にジムに行くor妻子とおでかけです。20代のときは、友達とバンドを組んで音楽活動もしていました。大学生時代から世界各地の音楽に興味を持っていたこともあり、主に南米、アイルランド、中東の楽器を使って、曲をつくったり演奏したりしていました。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>頻繁に使用するツールはありますか？</span></dt>
+          <dd class="interview__answer"><span>Adobe Photoshop</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>尊敬している人は誰ですか？</span></dt>
+          <dd class="interview__answer"><span>佐藤可士和さん</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>なぜ現在の職業に就きたいと思ったのですか？</span></dt>
+          <dd class="interview__answer"><span>理由を考えたこともありません。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>業務外で自主制作をされていますか？</span></dt>
+          <dd class="interview__answer"><span>今はしていません。昔は、スゴロク、音楽CD、flashゲーム、flashアニメなどをつくっていたことがあります。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>製作過程について教えて下さい。</span></dt>
+          <dd class="interview__answer"><span>ディレクターさんに主旨を聞き、それについて自分で考え、考えたことを形にします。それを見てもらって意見をもらい、意見を反映して更に良いものにします。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>最後に一言お願いします。</span></dt>
+          <dd class="interview__answer"><span>最後の一言をいうにはまだ早いです。</span></dd>
+        </dl>
+      </div>
+    </div>
+  </main>
+  <% include ../components/_footer %>
+</div>
+<%- include ../components/_modal %>
+<% include ../components/_scripts %>
+</body>
+</html>

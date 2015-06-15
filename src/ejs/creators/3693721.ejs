@@ -1,0 +1,84 @@
+<% include ../_global %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Hitoshi Goto | GREE Creators Portfolio</title>
+<% include ../components/_head %>
+</head>
+<body>
+<div class="contents-wrapper">
+<% include ../components/_navbar %>
+  <main class="main">
+    <div class="biography">
+     <div class="container">
+        <ul class="breadcrumb"><!--
+          --><li><a href="<%= this.SITE_ROOT %>">Top</a></li><!--
+          --><li><a href="./">Creators</a></li><!--
+          --><li>Hitoshi Goto</li><!--
+        --></ul>
+        <div class="biography__inner">
+          <h1 class="biography__name">後藤 仁<span class="biography__name__alphabet">Hitoshi Goto</span></h1>
+          <div class="biography__post">リードアーティスト<br>Wright Flyer Studios 2部 / Artグループ / Art Directionチーム</div>
+          <p class="biography__description">長野県生まれ。電気通信大学（機械制御工学科）入学後、コンシューマーゲームメーカー制作会社を経てグリー株式会社に入社。「聖戦ケルベロス」のアートディレクターを担当後、現在はNativeゲームの新規プロダクト開発に携わる。（2015年6月現在）</p>
+          <a href="#interview" class="button-link">interview<span class="icon icon__2"></span></a>
+          <img src="<%= this.SITE_ROOT %>img/creator/3693721.png" alt="後藤 仁" class="biography__portrait">
+        </div>
+     </div>
+    </div>
+
+    <%- include('../components/_portfoliolist_creator', {user_id: 3693721}); %>
+    <div class="interview" id="interview">
+      <div class="interview__inner">
+        <h2 class="interview__title">Interview</h2>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>仕事をする上で気をつけていることは何ですか？</span></dt>
+          <dd class="interview__answer"><span>仕事をする上で、ゲーム制作に関わる人たちの良好な人間関係と、ゲームプレイヤーの方たちに喜んでいただけること、を重視してます。<br>ゲーム制作は、個人の自己主張であると同時に一緒につくっていく仲間との二人三脚の作業でもあります。<br>独りよがりになりすぎないようにすることと、自分のわがままを通すことにって起る周りへの影響にも、目を向けるよう心掛けています。
+          </span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>過去、印象に残っている仕事は何ですか？</span></dt>
+          <dd class="interview__answer"><span>携わった作品全てです。どれも真剣にやりましたので心身ともに疲れましたが、全てが糧になっています。それらの糧を活かす形で、求められた方向性を一発で提案できた時などは、非常に嬉しいですね。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>グリーでのやりがいは何ですか？</span></dt>
+          <dd class="interview__answer"><span>多くの局面でアートの技量とアイディアが求められます。例えば、新規案件のビジュアル提案や、世界観やアイディアを広げる部分は特にやりがいを感じます。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>休日の過ごし方は？</span></dt>
+          <dd class="interview__answer"><span>家族と公園やショッピングモールなどに出かけることが多いです。<br>子供が生まれてからは、据え置き機のゲームに割ける時間がなくなりましたね。<br>通勤時のソーシャルゲームが自分の憩いの時間です。（笑）</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>頻繁に使用するツールはありますか？</span></dt>
+          <dd class="interview__answer"><span>Adobe Photoshop、ペイントツールSAI</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>尊敬している人は誰ですか？</span></dt>
+          <dd class="interview__answer"><span>責任感があり人のせいにしない人全般。
+  父、上司、同僚など。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>なぜ現在の職業に就きたいと思ったのですか？</span></dt>
+          <dd class="interview__answer"><span>物作りでなら、人に喜んでもらうことができると思ったからです。あるエピソードで、「あなたの作品で人生が変わりました」と言っていただいたことがあって、自分の作品が人に与える影響の深さに、自分でも驚いたことがあります。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>業務外で自主制作をされていますか？</span></dt>
+          <dd class="interview__answer"><span>業務外でもアイディア出しとか落書きはしています。歩いてるときに思いつくことが多々あって、帰宅途中に思いついたら帰宅後すぐにメモします。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>製作過程について教えて下さい。</span></dt>
+          <dd class="interview__answer"><span>カラーラフ⇒線画⇒着彩⇒仕上げ（効果など）</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>最後に一言お願いします。</span></dt>
+          <dd class="interview__answer"><span>常に謙虚に、かつ大胆な創作を心がけていきます。お客様にせよ、仕事仲間にせよ相手がどのように感じているのか常にシミュレーションすることが大切です。</span></dd>
+        </dl>
+      </div>
+    </div>
+  </main>
+  <% include ../components/_footer %>
+</div>
+<%- include ../components/_modal %>
+<% include ../components/_scripts %>
+</body>
+</html>

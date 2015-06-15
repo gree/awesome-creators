@@ -1,0 +1,26 @@
+.filter {
+  @include clearfix;
+  font-size: 16px;
+  height: 45px;
+  line-height: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+
+  li {
+    cursor: pointer;
+    float: left;
+    margin-right: 20px;
+    color: $text-link__color;
+
+    .icon {
+      margin-top: 4px;
+      margin-right: 10px;
+    }
+
+    &.active {
+      cursor: auto;
+      color: $text-base__color;
+    }
+  }
+}

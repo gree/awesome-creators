@@ -1,0 +1,82 @@
+<% include ../_global %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Shun Noguchi | GREE Creators Portfolio</title>
+<% include ../components/_head %>
+</head>
+<body>
+<div class="contents-wrapper">
+  <% include ../components/_navbar %>
+  <main class="main">
+    <div class="biography">
+     <div class="container">
+        <ul class="breadcrumb"><!--
+          --><li><a href="<%= this.SITE_ROOT %>">Top</a></li><!--
+          --><li><a href="./">Creators</a></li><!--
+          --><li>Shun Noguchi</li><!--
+        --></ul>
+        <div class="biography__inner">
+          <h1 class="biography__name">野口 隼<span class="biography__name__alphabet">Shun Noguchi</span></h1>
+          <div class="biography__post">リードアニメーター<br>Wright Flyer Studios 2部 / Artグループ / Tech Art and Animation チーム</div>
+          <p class="biography__description">東京都生まれ。大学、ゲーム系専門学校卒業後、Web制作会社を経てグリー株式会社に入社。アニメーター／テクニカルアーティストとして「ハコニワ ふしぎな手紙とどうぶつ島」「消滅都市」の開発に携わる。（2015年6月現在）</p>
+          <a href="#interview" class="button-link">interview<span class="icon icon__2"></span></a>
+          <img src="<%= this.SITE_ROOT %>img/creator/2038711.png" alt="野口 隼" class="biography__portrait">
+        </div>
+     </div>
+    </div>
+
+    <%- include('../components/_portfoliolist_creator', {user_id: 2038711}); %>
+    <div class="interview" id="interview">
+      <div class="interview__inner">
+        <h2 class="interview__title">Interview</h2>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>仕事をする上で気をつけていることは何ですか？</span></dt>
+          <dd class="interview__answer"><span>アニメーションや演出はスマートフォンという環境による制約を受けやすく、技術的要件が複雑になりがちです。それらを理解した上で、動作パフォーマンスと表現力の両立・バランスに気を遣っています。<br>また、他職種との連携を円滑に行うためのコミュニケーションやワークフローを意識しています。特にエンジニアと連携することが多いので、できるだけエンジニアリングへの理解も深めらるよう努めています。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>過去、印象に残っている仕事は何ですか？</span></dt>
+          <dd class="interview__answer"><span>はじめての本格的なゲーム開発経験となり、その楽しさを教えてくれた「ハコニワ」。<br>ユーザーの反応をよりダイレクトに感じながらアプリの成長とともに歩んだ「消滅都市」。<br>どちらも印象に残っています。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>グリーでのやりがいは何ですか？</span></dt>
+          <dd class="interview__answer"><span>優秀な人たちが集まっているので、たくさんの刺激をもらって日々学びながら、成長しながら仕事ができることです。<br>コンシューマー業界出身の歴戦の方々も多くいらっしゃるので、WEB業界出身の自分にとってはそのような方々と一緒にゲーム作りができることがとても刺激的です。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>休日の過ごし方は？</span></dt>
+          <dd class="interview__answer"><span>最近は１歳になったばかりの子供の相手を、全力でしています。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>頻繁に使用するツールはありますか？</span></dt>
+          <dd class="interview__answer"><span>Adobe Flash</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>アニメーションはどのように制作されてるのですか？</span></dt>
+          <dd class="interview__answer"><span>目的に合わせてFlash、After Effects、Spine等を使って制作しています。<br>グリーでは、自社開発の技術（LWF）を使ってFlashをネイティブ環境で動かしているので、Flashもまだまだ現役です。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>なぜ現在の職業に就きたいと思ったのですか？</span></dt>
+          <dd class="interview__answer"><span>元々ゲームを作りたいと思っていたものの、Web業界に入って長年やってきましたが、FlashをはじめとするWebの技術や経験を活かしてゲームをつくる道筋が見えてきたので、思い切ってこの業界に飛び込んでみました。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>業務外で自主制作をされていますか？</span></dt>
+          <dd class="interview__answer"><span>FlashやUnityでゲーム制作・プログラミング（の練習）をしたり、3Dのモデリング・アニメーションの練習もときどきしています。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>製作過程について教えて下さい。</span></dt>
+          <dd class="interview__answer"><span>アニメーションでいうと、技術的にはFlashをメインで使っていますが、立ち位置として絵素材を制作しているデザイナーと、ゲームに実装するエンジニアの間に立って、双方とコミュニケーションを取りながら進める事が多いです。<br>その過程で、ワークフローを構築したり、時にはツールや自動化・効率化の仕組みを作ったりといった、テクニカルアーティスト的な役割も同時に担う事もあります。</span></dd>
+        </dl>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>最後に一言お願いします。</span></dt>
+          <dd class="interview__answer"><span>時間よ、止まれ！（最近、時の流れがはやい）</span></dd>
+        </dl>
+      </div>
+    </div>
+  </main>
+  <% include ../components/_footer %>
+</div>
+<%- include ../components/_modal %>
+<% include ../components/_scripts %>
+</body>
+</html>
