@@ -1,0 +1,44 @@
+{
+  "name": "@gree/portfolio",
+  "version": "1.0.0",
+  "description": "A portfolio site for art",
+  "private": true,
+  "scripts": {
+    "start": "cd dest; python -m SimpleHTTPServer",
+    "sass": "gulp sass",
+    "vendor": "gulp vendor",
+    "watch": "gulp watch",
+    "ejs": "gulp ejs",
+    "clean": "gulp clean",
+    "build": "gulp build",
+    "build-secret": "node secret/portfolios.js && node secret/image.js && node secret/imagemin.js",
+    "full-build": "npm run clean && npm run build-secret && gulp build",
+    "postinstall": "npm run build",
+    "predeploy": "npm run build",
+    "deploy": "git push origin :gh-pages | git subtree push --prefix dest/ origin gh-pages"
+  },
+  "devDependencies": {
+    "csvtojson": "^0.3.21",
+    "easyimage": "^2.0.3",
+    "gulp": "^3.8.11",
+    "gulp-clean": "^0.3.1",
+    "gulp-concat": "^2.5.2",
+    "gulp-ejs": "^1.1.0",
+    "gulp-html": "^0.4.1",
+    "gulp-minify-css": "^1.1.1",
+    "gulp-minify-html": "^1.0.2",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.0",
+    "gulp-sass": "^2.0.0",
+    "gulp-scss-lint": "^0.1.12",
+    "gulp-uglify": "^1.2.0",
+    "gulp-watch": "^4.2.0",
+    "mkdirp": "^0.5.1"
+  },
+  "dependencies": {
+    "jquery": "^2.1.4",
+    "jquery-lazyload": "^1.9.5",
+    "masonry-layout": "^3.3.0",
+    "sanitize.css": "^1.1.0"
+  }
+}
