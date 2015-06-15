@@ -1,7 +1,7 @@
-GREE Creator&apos;s Portfolio
+GREE Creators' Portfolio
 ======
 
-This is the development environment for 'GREE Creator&apos;s Portfolio'
+This is the development environment for "GREE Creators' Portfolio"
 
 License
 ------------
