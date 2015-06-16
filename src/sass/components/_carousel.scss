@@ -1,0 +1,123 @@
+.carousel {
+  @include content-base;
+  z-index: $carousel__zIndex;
+  position: relative;
+  height: 470px;
+  margin-bottom: -155px;
+
+  .carousel__indicators {
+    position: absolute;
+    z-index: 2;
+    width: 160px;
+    top: 45px;
+    left: 40px;
+    text-align: center;
+
+    ol{
+      display: inline-block;
+      overflow: hidden;
+      height: 11px;
+      padding: 3px 6px;
+      background-color: rgba(0, 0, 0, .7);
+      border-radius: 6px;
+
+      li {
+        display: inline-block;
+        vertical-align: top;
+        background-color: #fff;
+        width: 5px;
+        height: 5px;
+        margin-right: 8px;
+        border-radius: 6px;
+        line-height: 5px;
+
+        &.active {
+          background-color: #4d9eda;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+  }
+
+  .carousel__inner {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    .carousel__item {
+      display: none;
+
+      &::before {
+        width: 940px;
+        height: 470px;
+        content: ' ';
+        background-image: url('../img/common/carousel-shadow.png');
+        background-size: 940px 470px;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+      }
+
+      &.active {
+        display: block;
+      }
+
+      img {
+        display: block;
+        width: 940px;
+        height: 470px;
+        position: relative;
+        z-index: 1;
+      }
+    }
+
+    .carousel__caption {
+      width: 160px;
+      height: 40px;
+      display: table;
+      position: absolute;
+      top: 0;
+      left: 40px;
+      z-index: 2;
+      background-color: rgba(0, 0, 0, .7);
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border-collapse: separate;
+      border-spacing: 5px 0;
+
+      >li {
+        display: table-cell;
+        margin-right: 5px;
+        border-collapse: separate;
+        border-spacing: 2px 0;
+        vertical-align: middle;
+        font-size: 12px;
+        line-height: 15px;
+        color: $text-base__color;
+      }
+
+      .caption__icon {
+        border-color: #b7b7b7;
+        border-width: 1px;
+        background-color: #fff;
+        width: 30px;
+        height: 30px;
+        border-radius: 16px;
+
+        img {
+          width: 30px;
+          height: 30px;
+          border-radius: 15px;
+        }
+      }
+    }
+  }
+}

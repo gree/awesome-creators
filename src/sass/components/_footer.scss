@@ -1,0 +1,38 @@
+.footer{
+  @include clearfix;
+  border-top: 1px solid $gray-base;
+  z-index: $footer__zIndex;
+  padding: 8px 0 0;
+  height: 60px;
+  background-color: #fff;
+  position: relative;
+
+  .footer__info{
+    float: left;
+
+    a{
+      @include text-link;
+      font-size: 12px;
+      color: $text-link__color;
+    }
+
+    .info__copyright{
+      font-size: 10px;
+      line-height: 1;
+
+      &:only-child{
+        margin-top: 17px;
+      }
+    }
+  }
+
+  .footer__copyright{
+    float: right;
+    margin-right: 10px;
+    margin-top: 9px;
+    height: 26px;
+    line-height: 26px;
+    font-weight: bold;
+    color: $text-base__color;
+  }
+}

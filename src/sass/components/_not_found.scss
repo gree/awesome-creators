@@ -1,0 +1,18 @@
+.not-found {
+  padding: 20px 0;
+
+  .not-found__body {
+    @include content-base;
+    margin-top: 40px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    padding: 40px 0;
+
+    .not-found__title,
+    .not-found__description{
+      margin-bottom: 30px;
+    }
+  }
+
+}

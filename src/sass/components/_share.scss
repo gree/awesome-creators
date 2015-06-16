@@ -1,0 +1,23 @@
+.share {
+  margin-top: 8px;
+  float: right;
+
+  li {
+    display: inline-block;
+    margin-right: 10px;
+    max-height: 30px;
+    overflow: hidden;
+  }
+
+  .share__twitter {
+    min-width: 107px;
+    margin: 0;
+    margin-top: 3px;
+  }
+
+  .share__facebook {
+    min-width: 94px;
+    margin-top: -1px;
+  }
+
+}

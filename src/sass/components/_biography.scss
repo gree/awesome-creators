@@ -1,0 +1,47 @@
+.biography {
+  position: relative;
+  background-image: linear-gradient(to right, #fff, #e0f7ef);
+  padding: 20px 0;
+  min-height: 300px;
+
+  .biography__inner{
+    @include content-base;
+    margin-top: 45px;
+  }
+
+  .biography__name{
+    width: 460px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-size: 20px;
+    letter-spacing: .2em;
+
+    .biography__name__alphabet{
+      font-size: 12px;
+      margin-left: 25px;
+      letter-spacing: .1em;
+    }
+  }
+
+  .biography__post{
+    width: 460px;
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+
+  .biography__description{
+    width: 460px;
+    margin-bottom: 15px;
+    font-size: 12px;
+  }
+
+  .biography__portrait{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: 10px;
+    width: 300px;
+    height: 300px;
+  }
+
+}

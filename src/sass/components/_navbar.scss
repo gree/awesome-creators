@@ -1,0 +1,61 @@
+.navbar {
+  @include clearfix;
+  background-color: #fff;
+  border-color: $blue-base;
+  border-width: 0 0 2px;
+  font-weight: bold;
+  height: 60px;
+
+  .navbar__header {
+    @include clearfix;
+    float: left;
+    line-height: 60px;
+    margin: 0;
+
+    .navbar__brand{
+      display: block;
+      margin-top: 15px;
+
+      .navbar__brand--portfolio {
+        display: block;
+        width: 250px;
+        height: 28px;
+        background-repeat: no-repeat;
+        background-image: url('../img/common/logo_portfolio.svg');
+        background-size: 250px 28px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-indent: 100%;
+      }
+    }
+  }
+
+
+  .navbar__nav {
+    @include clearfix;
+    float: right;
+    font-size: 14px;
+    line-height: 40px;
+    margin: 0;
+    margin-right: -10px;
+
+    >li {
+      float: left;
+
+      >a {
+        position: relative;
+        display: block;
+        padding: 10px 15px;
+        color: $text-link__color;
+      }
+    }
+
+    .active {
+      background-color: $blue-base;
+
+      >a{
+        color: #fff;
+      }
+    }
+  }
+}

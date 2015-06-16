@@ -1,0 +1,11 @@
+@mixin icon($name, $width, $height, $top: 0) {
+  &.icon__#{$name} {
+    width: $width;
+    height: $height;
+    background-position: 0 $top;
+
+    &.active {
+      background-position: -$width $top;
+    }
+  }
+}

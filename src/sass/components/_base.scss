@@ -1,0 +1,23 @@
+body{
+  color: $text-base__color;
+}
+
+a{
+  color: $text-link__color;
+
+  &:hover,
+  &:active{
+    cursor: pointer;
+  }
+
+  &:hover,
+  &:active,
+  &:visited{
+    color: $text-link__color;
+  }
+}
+
+ol,
+ul {
+  list-style: none;
+}
