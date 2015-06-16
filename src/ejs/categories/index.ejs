@@ -1,0 +1,113 @@
+<% include ../_global %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Categories | GREE Creators&#39; Portfolio</title>
+<% include ../components/_head %>
+</head>
+<body>
+<div class="contents-wrapper">
+  <% include ../components/_navbar %>
+  <main class="main">
+    <div class="container">
+      <%- include('../components/_carousel', {global_top: false}); %>
+      <div class="panels panels--products">
+        <div class="panels__header">
+          <ul class="filter">
+            <li>
+              <a href="<%= this.SITE_ROOT %>">
+                <span class="icon icon__4"></span>Works
+              </a>
+            </li>
+            <li>
+              <a href="<%= this.SITE_ROOT %>creators/">
+                <span class="icon icon__4"></span>Creators
+              </a>
+            </li>
+            <li class="active">
+              <span class="icon icon__4 active"></span>Categories
+            </li>
+          </ul>
+        </div>
+        <p class="categories__heading">Products</p>
+
+        <div class="panels__body">
+          <div class="panel">
+            <a href="products/[product name].html" class="panel__body">
+              <img src="<%= this.SITE_ROOT %>img/products/[product name].png" alt="">
+            </a>
+            <div class="panel__footer">
+              <a href="products/[product name].html">
+                <ul class="panel__product">
+                  <li>
+                    [product name]
+                  </li>
+                  <li><span class="icon icon__1"></span></li>
+                </ul>
+              </a>
+            </div>
+          </div>
+          <div class="panel">
+            <a href="products/[product name].html" class="panel__body">
+              <img src="<%= this.SITE_ROOT %>img/products/[product name].png" alt="">
+            </a>
+            <div class="panel__footer">
+              <a href="products/[product name].html">
+                <ul class="panel__product">
+                  <li>
+                    [product name] ※
+                  </li>
+                  <li><span class="icon icon__1"></span></li>
+                </ul>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panels panels--tags">
+        <p class="categories__heading">Tags</p>
+        <div class="panels__body panels__body--tags">
+          <a href="tags/illust.html" class="panel">
+            <div class="panel__body">
+              <ul class="panel__tag">
+                <li>
+                  イラスト
+                </li>
+                <li><span class="icon icon__1"></span></li>
+              </ul>
+            </div>
+          </a>
+          <a href="tags/animation.html" class="panel">
+            <div class="panel__body">
+              <ul class="panel__tag">
+                <li>
+                  アニメーション
+                </li>
+                <li><span class="icon icon__1"></span></li>
+              </ul>
+            </div>
+          </a>
+          <a href="tags/ui.html" class="panel">
+            <div class="panel__body">
+              <ul class="panel__tag">
+                <li>
+                  UI
+                </li>
+                <li><span class="icon icon__1"></span></li>
+              </ul>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="notes">
+        ※ 本タイトルはサービスを終了しております。
+      </div>
+    </div>
+  </main>
+  <% include ../components/_footer %>
+</div>
+<% include ../components/_scripts %>
+</body>
+</html>

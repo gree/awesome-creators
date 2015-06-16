@@ -1,0 +1,41 @@
+<div class="panel">
+  <div class="panel__body">
+    <img
+      class="js__lazy"
+      data-original="<%= this.SITE_ROOT %>img/thumbnails/<%= portfolios[i]['id'] %>/<%= portfolios[i]['thumbnail_url'] %>"
+      data-target="#modal"
+      data-toggle="modal"
+      data-modal-portfolio="<%= this.SITE_ROOT %>img/portfolios/<%= portfolios[i]['id'] %>/<%= portfolios[i]['image_url'] %>"
+      data-modal-creator="<%= this.SITE_ROOT %>img/creator/<%= portfolios[i]['id'] %>.png"
+      <% if(portfolios[i]['product_id'] != null && portfolios[i]['product_id'] != "" ){ %>
+      data-modal-product="<%= this.SITE_ROOT %>img/products/<%= portfolios[i]['product_id'] %>.png"
+      <% } %>
+      data-modal-name="<%=portfolios[i]['user_name']%>"
+      data-modal-name-en="<%=portfolios[i]['user_name_en']%>"
+      data-modal-tag-name="<%= portfolios[i]['tag_name']%>"
+      src ="<%= this.SITE_ROOT %>img/common/transparent.gif"
+      alt="<%= portfolios[i]['product_name']%>の<%= portfolios[i]['tag_name']%>"
+    >
+    <div class="panel__category">
+      <% if( portfolios[i]['product_id']!=null && portfolios[i]['product_id'] !== '' ){ %>
+      <a href="<%= this.SITE_ROOT %>categories/products/<%= portfolios[i]['product_id'] %>.html"><span class="icon icon__3"></span> <%= portfolios[i]['product_name']%></a>
+      <br>
+      <% } %>
+      <a href="<%= this.SITE_ROOT %>categories/tags/<%= portfolios[i]['tag_id'] %>.html"><span class="icon icon__3"></span> <%= portfolios[i]['tag_name']%></a>
+    </div>
+  </div>
+  <div class="panel__footer">
+    <a href="<%= this.SITE_ROOT %>creators/<%= portfolios[i]['id'] %>.html">
+      <ul class="panel__creator">
+        <li class="creator__icon">
+          <img src="<%= this.SITE_ROOT %>img/creator/<%= portfolios[i]['id'] %>.png" alt="<%= portfolios[i]['user_name'] %>">
+        </li>
+        <li>
+          <%= portfolios[i]['user_name'] %><br>
+          <%= portfolios[i]['user_name_en'] %>
+        </li>
+        <li><span class="icon icon__1"></span></li>
+      </ul>
+    </a>
+  </div>
+</div>

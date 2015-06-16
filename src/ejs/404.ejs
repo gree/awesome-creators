@@ -1,0 +1,33 @@
+<% include ./_global %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Not Found | GREE Creators&#39; Portfolio</title>
+<% include ./components/_head_absolute_path %>
+</head>
+<body>
+<div class="contents-wrapper">
+  <% include ./components/_navbar %>
+  <main class="main">
+    <div class="not-found">
+      <div class="container">
+        <ul class="breadcrumb"><!--
+          --><li><a href="http://portfolio.cr.gree.net">Top</a></li><!--
+          --><li>お探しの情報が見つかりません</li><!--
+        --></ul>
+
+        <div class="not-found__body">
+          <h1 class="not-found__title">お探しの情報が見つかりません</h1>
+          <p class="not-found__description">お探しの情報は、他の場所へ移動したか、リンクが無効になっている可能性があります。<br>
+            Topから、ご覧になりたい情報をお探しください。</p>
+          <a href="http://portfolio.cr.gree.net" class="button-link">Topへ戻る</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <% include ./components/_footer %>
+</div>
+<% include ./components/_scripts_absolute_path %>
+</body>
+</html>

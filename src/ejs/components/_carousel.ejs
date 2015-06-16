@@ -1,0 +1,28 @@
+<div class="carousel">
+  <div class="carousel__indicators">
+    <ol id="carousel-main"><!--
+       --><li data-target="#carousel-slide" data-slide-to="0" class="active"></li><!--
+     --></ol>
+  </div>
+  <div id="carousel-slide" class="carousel__inner" role="listbox">
+    <div class="carousel__item active">
+      <% if (global_top) { %>
+      <img class="js__lazy" data-original="<%= this.SITE_ROOT %>img/carousel/header_cerberus_02.jpg" src="<%= this.SITE_ROOT %>img/carousel/header_cerberus_02_thumb.jpg" alt="[creator name]のイラスト">
+      <% } else { %>
+      <img src="<%= this.SITE_ROOT %>img/carousel/header_cerberus_02.jpg" alt="[creator name]のイラスト">
+      <% } %>
+      <a href="<%= this.SITE_ROOT %>creators/[creator name].html">
+        <ul class="carousel__caption">
+          <li class="caption__icon">
+            <img src="<%= this.SITE_ROOT %>img/creator/[NNNN].png" alt="[creator name]">
+          </li>
+          <li>
+            [creator name]<br>
+            [creator name]
+          </li>
+          <li><span class="icon icon__1"></span></li>
+        </ul>
+      </a>
+    </div>
+  </div>
+</div>

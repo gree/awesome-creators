@@ -1,0 +1,46 @@
+<% include ../_global %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>[firstname lastname] | GREE Creators&#39; Portfolio</title>
+<% include ../components/_head %>
+</head>
+<body>
+<div class="contents-wrapper">
+  <% include ../components/_navbar %>
+  <main class="main">
+    <div class="biography">
+     <div class="container">
+        <ul class="breadcrumb"><!--
+          --><li><a href="<%= this.SITE_ROOT %>">Top</a></li><!--
+          --><li><a href="./">Creators</a></li><!--
+          --><li>[firstname lastname]</li><!--
+        --></ul>
+        <div class="biography__inner">
+          <h1 class="biography__name">[姓 名]<span class="biography__name__alphabet">[firstname lastname]</span></h1>
+          <div class="biography__post">[ポジション]<br>[部署]</div>
+          <p class="biography__description">自己紹介テキスト</p>
+          <a href="#interview" class="button-link">interview<span class="icon icon__2"></span></a>
+          <img src="<%= this.SITE_ROOT %>img/creator/[NN].png" alt="[姓 名]" class="biography__portrait">
+        </div>
+     </div>
+    </div>
+
+    <%- include('../components/_portfoliolist_creator', {user_id: [NN]}); %>
+    <div class="interview" id="interview">
+      <div class="interview__inner">
+        <h2 class="interview__title">Interview</h2>
+        <dl class="interview__faq">
+          <dt class="interview__question"><span>質問テキスト</span></dt>
+          <dd class="interview__answer"><span>回答テキスト</span></dd>
+        </dl>
+      </div>
+    </div>
+  </main>
+  <% include ../components/_footer %>
+</div>
+<%- include ../components/_modal %>
+<% include ../components/_scripts %>
+</body>
+</html>
