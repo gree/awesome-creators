@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var autoprefixer = require('gulp-autoprefixer');
 var concat = require('gulp-concat');
 var ejs = require('gulp-ejs');
 var minifyCSS = require('gulp-minify-css');
@@ -36,6 +37,9 @@ gulp.task('sass', function () {
       'config': '.scsslint.yml',
     }))
     .pipe(sass())
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions']
+    }))
     .pipe(minifyCSS())
     .pipe(gulp.dest('dest/css'));
 });
