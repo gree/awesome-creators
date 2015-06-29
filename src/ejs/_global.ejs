@@ -1,6 +1,12 @@
 <%
-for( var i=1,siteRoot="",l=filename.split( EJS_ROOT ).pop().split("/").length; i<l; i++ ){
+// Relative path to root
+var i,len,siteRoot="";
+for( i=1,siteRoot="",len=filename.split( EJS_ROOT ).pop().split("/").length; i<len; i++ ){
    siteRoot+="../";
 }
 this.SITE_ROOT=siteRoot;
+
+// .html path (for og:url)
+var filePath = filename.split( EJS_ROOT )[1];
+this.HTML_FILE_PATH = filePath.slice( 0, filePath.lastIndexOf(".ejs") ) + ".html";
 %>
